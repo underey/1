@@ -22,7 +22,7 @@ public class TryTest {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        writer.println("Hello Jenkins. My Version of maven 6.8 buy.");
+        writer.println("Hello Jenkins. My Version of maven 6.2 buy.");
         writer.close();
     }
 
@@ -89,7 +89,7 @@ class RealNumber {
 
     private Pattern pattern;
     private Matcher matcher;
-    private String regex = "[+-]?(?:\\d+\\.?\\d+|\\d+\\.\\d+)";
+    private String regex = "[-]?(?:\\d+\\.\\d+)";
 
     public boolean checkReal(String number) {
         pattern = Pattern.compile(regex);
